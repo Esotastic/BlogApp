@@ -4,7 +4,7 @@
   <div class="ui huge header">
     Edit <%= blog.title %>
   </div>
-  <form action="/blogs/<%=blog._id%>" method="put" class="ui form">
+  <form action="/blogs/<%=blog._id%>?_method=PUT" method="POST" class="ui form">
     <div class="field">
       <label>Title</label>
       <input type="text" name="blog[title]" value="<%=blog.title%>">
